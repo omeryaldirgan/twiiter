@@ -15,6 +15,7 @@
     "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#edc=currentColor\""
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "css-loader": "^3.6.0",
     "next": "^9.4.4",
     "postcss-loader": "^3.0.0",

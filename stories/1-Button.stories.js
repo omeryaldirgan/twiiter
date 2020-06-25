@@ -10,4 +10,4 @@ export default {
 
 export const Normal = () => (<Button>Save</Button>);
 export const Menu = () => (<NavButton>Save</NavButton>);
-export const Nav = () => (<Navigation/>);
+export const Nav = () => (<Navigation selectedKey="home"/>);

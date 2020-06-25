@@ -1,36 +1,36 @@
 import React from 'react';
 
 import NavButton from './nav-button';
-
+import TitleBold from './title-bold';
 import {Twitter,Home,Notifications,Message, Bookmarks, Lists} from './icons'
 
 import styles from './nav.module.css'
 
-const Navigation=()=>{
+const Navigation=({selectedKey})=>{
     return(
         <nav className={styles.nav}>
             <NavButton>
                 <Twitter/>
             </NavButton>
-            <NavButton>
+            <NavButton selected={selectedKey==="home"}>
                 <Home/>
-                <span>Home</span>
+                <TitleBold>Home</TitleBold>
             </NavButton>
-            <NavButton>
+            <NavButton notify={17} selected={selectedKey==="notifications"}>
                 <Notifications/>
-                <span>Notifications</span>
+                <TitleBold>Notifications</TitleBold>
             </NavButton>
-            <NavButton>
+            <NavButton selected={selectedKey==="message"}>
                 <Message/>
-                <span>Message</span>
+                <TitleBold>Message</TitleBold>
             </NavButton>
-            <NavButton>
+            <NavButton selected={selectedKey==="bookmarks"}>
                 <Bookmarks/>
-                <span>Bookmarks</span>
+                <TitleBold>Bookmarks</TitleBold>
             </NavButton>
-            <NavButton>
+            <NavButton selected={selectedKey==="lists"}>
                 <Lists/>
-                <span>Lists</span>
+                <TitleBold>Lists</TitleBold>
             </NavButton>
         </nav>
     )
