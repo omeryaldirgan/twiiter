@@ -1,0 +1,14 @@
+.button{
+    color:var(--c-text-color);
+    background-color: var(--c-theme);
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    &:hover{
+        color:var(--c-text-color);
+        background-color: var(--c-theme-90);
+    }
+}
+.big{
+    height: 50px;
+}

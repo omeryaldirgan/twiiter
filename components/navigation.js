@@ -1,9 +1,8 @@
 import React from 'react';
 
 import NavButton from './nav-button';
-import TitleBold from './title-bold';
+import TextTitle from './text-title';
 import {Twitter,Home,Notifications,Message, Bookmarks, Lists} from './icons'
-
 import styles from './nav.module.css'
 
 const Navigation=({selectedKey})=>{
@@ -14,23 +13,23 @@ const Navigation=({selectedKey})=>{
             </NavButton>
             <NavButton selected={selectedKey==="home"}>
                 <Home/>
-                <TitleBold>Home</TitleBold>
+                <TextTitle>Home</TextTitle>
             </NavButton>
             <NavButton notify={17} selected={selectedKey==="notifications"}>
                 <Notifications/>
-                <TitleBold>Notifications</TitleBold>
+                <TextTitle>Notifications</TextTitle>
             </NavButton>
             <NavButton selected={selectedKey==="message"}>
                 <Message/>
-                <TitleBold>Message</TitleBold>
+                <TextTitle>Message</TextTitle>
             </NavButton>
             <NavButton selected={selectedKey==="bookmarks"}>
                 <Bookmarks/>
-                <TitleBold>Bookmarks</TitleBold>
+                <TextTitle>Bookmarks</TextTitle>
             </NavButton>
             <NavButton selected={selectedKey==="lists"}>
                 <Lists/>
-                <TitleBold>Lists</TitleBold>
+                <TextTitle>Lists</TextTitle>
             </NavButton>
         </nav>
     )
